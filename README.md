@@ -106,6 +106,74 @@ Button B / Bluetooth → Manual Mode
 
 Use any Bluetooth controller app to send commands.
 
+🖥️ Environment Setup & Installation
+1. Install Arduino IDE
+
+Download from the official Arduino website.
+Supports Windows, macOS, and Linux.
+
+2. Install Required Libraries
+
+Open:
+Arduino IDE → Tools → Manage Libraries
+
+Install:
+
+Adafruit GFX Library
+
+Adafruit SSD1306
+
+Servo
+
+SoftwareSerial is built-in
+
+Optional:
+
+NewPing (if using the ultrasonic sensor)
+
+3. Select the Correct Board
+
+In Arduino IDE:
+
+Tools → Board → Arduino AVR Boards → Arduino Uno
+
+4. Select the COM Port
+
+Tools → Port → COMx (Arduino Uno)
+
+If not detected, install CH340 driver (for Uno clones).
+
+5. Upload the Code
+
+Clone/download this repository
+
+Open ./code/tyran_robot.ino
+
+Click:
+
+✔ Verify
+
+→ Upload
+
+▶️ How to Use the Robot
+Autonomous Mode
+
+Switch robot to autonomous
+
+Robot will follow lines using IR sensors
+
+OLED displays mode and debug info
+
+Optionally detects obstacles via ultrasonic sensor
+
+Manual Mode
+
+Pair phone with HC-05 (default PIN: 1234 or 0000)
+
+Open any Bluetooth controller app
+
+Control movement + servo gripper
+
 🎥 Demo Video
 
 Photo
