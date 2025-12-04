@@ -2,7 +2,6 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Arduino](https://img.shields.io/badge/Arduino-Uno-blue)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
 Tyran — Dual-Mode Autonomous Robot
 
