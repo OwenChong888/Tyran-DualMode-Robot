@@ -1,7 +1,10 @@
-# Tyran-DualMode-Robot
-Tyran — Dual-Mode Autonomous Robot
+# Tyran — Dual-Mode Autonomous Robot
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Arduino](https://img.shields.io/badge/Arduino-Uno-blue)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+
+Tyran — Dual-Mode Autonomous Robot
 
 A versatile Arduino-based mobile robot capable of autonomous navigation (line following + destination searching) and manual Bluetooth control with a servo gripper.
 Designed for flexibility, expandability, and educational robotics projects.
