@@ -75,8 +75,35 @@ Gripper Servo 1	8
 Gripper Servo 2	4
 OLED
 
-(Most common: I2C)
+▶️ How to Use
+1. Install Required Libraries
 
-Function	Pin
-SDA	A4
-SCL	A5
+Adafruit_GFX
+
+Adafruit_SSD1306
+
+Servo
+
+SoftwareSerial (built-in)
+
+2. Upload the Code
+
+Open tyran_robot.ino → Select Arduino UNO → Upload.
+
+3. Power the Robot
+
+Use 5 × 18650 batteries (through a proper holder + 5V regulator if needed).
+
+4. Control Modes
+
+Button A / Switch → Autonomous Mode
+
+Button B / Bluetooth → Manual Mode
+
+Use any Bluetooth controller app to send commands.
+
+🎥 Demo Video
+
+
+
+
