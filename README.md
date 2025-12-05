@@ -11,11 +11,9 @@ Designed for flexibility, expandability, and educational robotics projects.
 🚀 Features
 🔹 Autonomous Mode
 
-PID line following using IR sensors
+Line following using 5 channel IR sensors
 
 Destination detection logic
-
-Obstacle awareness using ultrasonic sensor (if included)
 
 🔹 Manual Mode
 
@@ -29,11 +27,11 @@ Smooth proportional motor speed control
 
 OLED screen for:
 
-Mode indication
+Real-time status feedback
 
-Sensor readings
+Current mode
 
-Debug info
+Signals to the user
 
 🧠 System Overview
 
@@ -52,7 +50,6 @@ SG90 Servo × 2	Gripper mechanism
 18650 Battery ×5	Power supply
 2-Wheel Motor Chassis	Base platform
 IR Sensors	Line tracking
-Ultrasonic Sensor (Optional)	Obstacle detection
 🪛 Pin Connections
 
 (Adjust according to your code — here is a template)
@@ -67,24 +64,18 @@ IN4	6
 ENB	5
 Bluetooth HC-05
 HC-05 Pin	Arduino Pin
-TX	10 / SoftwareSerial RX
+TX	8 / SoftwareSerial RX
 RX	9 / SoftwareSerial TX
-Ultrasonic Sensor
-Function	Pin
-Trig	A5
-Echo	2
 Servos
 Servo	Pin
-Gripper Servo 1	8
+Gripper Servo 1	12
 Gripper Servo 2	4
 OLED
 
 ▶️ How to Use
 1. Install Required Libraries
 
-Adafruit_GFX
-
-Adafruit_SSD1306
+SSD1306Ascii
 
 Servo
 
@@ -96,13 +87,15 @@ Open tyran_robot.ino → Select Arduino UNO → Upload.
 
 3. Power the Robot
 
-Use 5 × 18650 batteries (through a proper holder + 5V regulator if needed).
+Use 3 × 18650 batteries for motor and arduino
+Use 2 x 18650 batteries for servo 
+(through a proper holder + 5V regulator if needed).
 
 4. Control Modes
 
 Button A / Switch → Autonomous Mode
 
-Button B / Bluetooth → Manual Mode
+Button X / Bluetooth → Manual Mode
 
 Use any Bluetooth controller app to send commands.
 
@@ -119,17 +112,11 @@ Arduino IDE → Tools → Manage Libraries
 
 Install:
 
-Adafruit GFX Library
-
-Adafruit SSD1306
+SSD1306Ascii
 
 Servo
 
 SoftwareSerial is built-in
-
-Optional:
-
-NewPing (if using the ultrasonic sensor)
 
 3. Select the Correct Board
 
@@ -164,8 +151,6 @@ Robot will follow lines using IR sensors
 
 OLED displays mode and debug info
 
-Optionally detects obstacles via ultrasonic sensor
-
 Manual Mode
 
 Pair phone with HC-05 (default PIN: 1234 or 0000)
@@ -174,9 +159,7 @@ Open any Bluetooth controller app
 
 Control movement + servo gripper
 
-🎥 Demo Video
-
-Photo
+🎥 Photo
 
 <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/fb14a535-4a5b-4f88-9da0-cfb7d94e3cf4" />
 
